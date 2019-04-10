@@ -80,7 +80,7 @@ func (r *GoReport) Execute(filename string) {
 
 func (r *GoReport) GetBytesPdf() (ret []byte) {
 	r.Convert(true)
-	ret = r.Converter.Pdf.GetBytesPdf()
+	innerret = r.Converter.Pdf.GetBytesPdf()
 	return
 }
 
